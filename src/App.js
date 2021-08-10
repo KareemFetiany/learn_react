@@ -1,10 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import HelloComponent from './HelloComponent';
+import TimesViewedComponent from './TimesViewedComponent';
+
 
 function App() {
   return (
     <div className="App">
+      <HelloComponent/>
+      <TimesViewedComponent/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import HelloComponent from './HelloComponent';
+// import HelloComponent from './HelloComponent';
+// import TimesViewedComponent from './TimesViewedComponent';
+
 
 ReactDOM.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   // <h1>Hello, react!</h1>,
-  <HelloComponent/>,
+  // <HelloComponent/>,
+  //<TimesViewedComponent/>,
   document.getElementById('root')
 );
 
