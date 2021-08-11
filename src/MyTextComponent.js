@@ -5,7 +5,7 @@ class MyTextComponent extends React.Component{
         super(props);
         this.state = {
           text: 'Look at Me!',
-          bold: false, color:'black'
+          bold: false, color:'green'
       };
     }
 
@@ -19,7 +19,7 @@ class MyTextComponent extends React.Component{
 
     Clickhandler(){
       if(this.state.color ==='red')
-          this.setState({color: 'black' });
+          this.setState({color: 'green' });
       else
           this.setState({color: 'red' });
     }
