@@ -4,16 +4,18 @@ import React from 'react';
 import HelloComponent from './HelloComponent';
 import TimesViewedComponent from './TimesViewedComponent';
 import CounterComponent from './CounterComponent';
+import MyTextComponent from './MyTextComponent';
 
 
 function App() {
   
   return (
-    <div style={{backgroundColor: "lightblue"}}>
+    <div style={{backgroundColor: "lightblue",color:"red"}}>
       <div className="App">
       <HelloComponent/>
       <TimesViewedComponent/>
       <CounterComponent/>
+      <MyTextComponent/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
