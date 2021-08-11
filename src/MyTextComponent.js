@@ -4,8 +4,8 @@ class MyTextComponent extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-          text: 'Look at Me!',
-          bold: false, color:'green'
+          //text: 'Look at Me!',
+          bold: false, color:'yellow'
       };
     }
 
@@ -19,7 +19,7 @@ class MyTextComponent extends React.Component{
 
     Clickhandler(){
       if(this.state.color ==='red')
-          this.setState({color: 'green' });
+          this.setState({color: 'yellow' });
       else
           this.setState({color: 'red' });
     }
@@ -32,10 +32,14 @@ class MyTextComponent extends React.Component{
             onClick = {this.Clickhandler.bind(this)}
             onMouseOver = {this.MouseOverhandler.bind(this)} 
             onMouseOut = {this.MouseOuthandler.bind(this)}>   
-        {this.state.text}
+        {this.props.text}
       </span>
       )
     }
+  }
+  
+  MyTextComponent.defaultProps = {
+    text: "Look at Me from props!"   
   }
 
   export default MyTextComponent;
