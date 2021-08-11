@@ -13,9 +13,13 @@ function App() {
     <div style={{backgroundColor: "lightblue",color:"red"}}>
       <div className="App">
       <HelloComponent/>
+      <br/>
       <TimesViewedComponent/>
+      <br/>
       <CounterComponent/>
+      <br/>
       <MyTextComponent/>
+      <br/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
