@@ -7,8 +7,10 @@ import CounterComponent from './CounterComponent';
 
 
 function App() {
+  
   return (
-    <div className="App">
+    <div style={{backgroundColor: "lightblue"}}>
+      <div className="App">
       <HelloComponent/>
       <TimesViewedComponent/>
       <CounterComponent/>
@@ -26,6 +28,7 @@ function App() {
           Learn React
         </a>
       </header>
+    </div>
     </div>
   );
 }
